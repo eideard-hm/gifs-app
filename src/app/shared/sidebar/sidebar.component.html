@@ -3,7 +3,9 @@
   <hr class="text-white">
   <h6>Search</h6>
   <div class="list-group list-reset">
-    <a href="#" *ngFor="let search of historic" class="list-group-item list-group-item-action">
+    <a href="#" *ngFor="let search of historic"
+    (click)="buscar(search)"
+    class="list-group-item list-group-item-action">
       {{search | titlecase}}
     </a>
   </div>
