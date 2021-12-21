@@ -1,0 +1,10 @@
+<div class="text-white bg-dark border-right p-3" id="sidebar">
+  <h3 class="color-white">Gifs - App</h3>
+  <hr class="text-white">
+  <h6>Search</h6>
+  <div class="list-group list-reset">
+    <a href="#" *ngFor="let search of historic" class="list-group-item list-group-item-action">
+      {{search | titlecase}}
+    </a>
+  </div>
+</div>
